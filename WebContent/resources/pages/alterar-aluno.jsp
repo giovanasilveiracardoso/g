@@ -1,10 +1,4 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html>
-<head>
-<title>Edição de aluno</title>
-</head>
-<body>
-	<br>
 	<div style="text-align:center">
 		<h2>
 			Editar Aluno
@@ -49,5 +43,3 @@
 				<input type="submit" value="Enviar">
 			</form>
 	</div>
-</body>
-</html>

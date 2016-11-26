@@ -1,10 +1,4 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<html>
-<head>
-<title>Cadastro de Aluno</title>
-</head>
-<body>
-	<br>
 	<div style="text-align:center">
 		<h2>
 			Cadastrar Aluno
@@ -43,5 +37,3 @@
 				<input type="submit" value="Enviar">
 			</form>
 	</div>
-</body>
-</html>
