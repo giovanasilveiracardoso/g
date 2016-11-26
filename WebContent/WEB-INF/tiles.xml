@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+ 
+    <!-- Master -->
+    <definition name="base.definition" template="/resources/tiles/template.jsp">
+        <put-attribute name="header" value="/resources/tiles/header.jsp"/>
+        <put-attribute name="footer" value="/resources/tiles/footer.jsp"/>
+    </definition>
+ 
+    <!--  Pages -->
+    <definition name="listarAlunos" extends="base.definition">
+    	<put-attribute name="title" value="Lista de Alunos" />  
+        <put-attribute name="body" value="/resources/pages/listar-alunos.jsp"/>
+    </definition>
+    <definition name="cadastrarAluno" extends="base.definition">
+    	<put-attribute name="title" value="Cadastro de Aluno" />  
+        <put-attribute name="body" value="/resources/pages/cadastrar-aluno.jsp"/>
+    </definition>
+    <definition name="alterarAluno" extends="base.definition">
+    	<put-attribute name="title" value="Edição de aluno" />  
+        <put-attribute name="body" value="/resources/pages/alterar-aluno.jsp"/>
+    </definition>
+</tiles-definitions>
