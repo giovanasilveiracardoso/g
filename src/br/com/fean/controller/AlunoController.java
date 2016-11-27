@@ -22,8 +22,9 @@ public class AlunoController {
 	
 	@RequestMapping(value="cadastrar-aluno")
 	public ModelAndView telaAluno() {
-		ModelAndView model = new ModelAndView("cadastrarAluno");
+		ModelAndView model = new ModelAndView("cadastroAluno");
 		model.addObject("listaDisciplinas", disciplinaService.buscarDisciplinas());
+		model.addObject("aluno", new AlunoDTO());
 		
 		return model;
 	}
@@ -51,7 +52,7 @@ public class AlunoController {
 	
 	@RequestMapping("alterar-aluno")
 	public ModelAndView telaAlterarAluno(AlunoDTO alunoDTO) {
-		ModelAndView model = new ModelAndView("alterarAluno");
+		ModelAndView model = new ModelAndView("cadastroAluno");
 		model.addObject("aluno", alunoService.buscarAluno(alunoDTO));
 		model.addObject("listaDisciplinas", disciplinaService.buscarDisciplinas());
 		

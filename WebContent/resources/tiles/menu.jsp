@@ -8,11 +8,10 @@
 			<div class="menu">
 				<ul id="menu">
 					<li id="menu-academico">
-						<a href="#">
+						<a href="<c:url value='/' />aluno/listar-alunos">
 							<i class="fa fa-list-ul" aria-hidden="true"></i>
 							<span>Alunos</span>
 							<span class="fa fa-angle-right" style="float: right"></span>
-							<div class="clearfix"></div>
 						</a>
 						<ul id="menu-academico-sub">
 							<li id="menu-academico-avaliacoes">
