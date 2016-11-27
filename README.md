@@ -1,7 +1,7 @@
 # Portal Fean
-Trabalho POO3 - Sistema FEAN em Spring MVC
+Trabalho POO3
 
-Tecnologias utilizadas:</br>
+Tecnologias utilizadas:</br></br>
 Java 8</br>
 Spring MVC</br>
 Maven</br>
