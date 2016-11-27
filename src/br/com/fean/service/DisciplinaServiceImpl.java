@@ -3,10 +3,10 @@ package br.com.fean.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.fean.dao.DisciplinaDAO;
-import br.com.fean.dao.DisciplinaDAOImpl;
 import br.com.fean.dto.DisciplinaDTO;
 import br.com.fean.entity.Disciplina;
 
@@ -17,11 +17,8 @@ import br.com.fean.entity.Disciplina;
 @Service
 public class DisciplinaServiceImpl implements DisciplinaService {
 
+	@Autowired
 	private DisciplinaDAO disciplinaDAO;
-	
-	public DisciplinaServiceImpl() {
-		disciplinaDAO = new DisciplinaDAOImpl();
-	}
 	
 	@Override
 	public List<DisciplinaDTO> buscarDisciplinas(){

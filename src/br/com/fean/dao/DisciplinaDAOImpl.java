@@ -3,12 +3,15 @@ package br.com.fean.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import br.com.fean.entity.Disciplina;
 
 /**
  * @author giovana.cardoso
  *
  */
+@Repository
 public class DisciplinaDAOImpl implements DisciplinaDAO {
 
 	private static List<Disciplina> disciplinas;

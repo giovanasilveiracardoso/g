@@ -3,12 +3,15 @@ package br.com.fean.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import br.com.fean.entity.Aluno;
 
 /**
  * @author giovana.cardoso
  *
  */
+@Repository
 public class AlunoDAOImpl implements AlunoDAO {
 
 	private static List<Aluno> alunos;

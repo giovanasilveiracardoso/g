@@ -3,10 +3,10 @@ package br.com.fean.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.fean.dao.AlunoDAO;
-import br.com.fean.dao.AlunoDAOImpl;
 import br.com.fean.dto.AlunoDTO;
 import br.com.fean.entity.Aluno;
 import br.com.fean.entity.Disciplina;
@@ -18,13 +18,11 @@ import br.com.fean.entity.Disciplina;
 @Service
 public class AlunoServiceImpl implements AlunoService {
 
+	@Autowired
 	private AlunoDAO alunoDAO;
-	private DisciplinaService disciplinaService;
 	
-	public AlunoServiceImpl() {
-		alunoDAO = new AlunoDAOImpl();
-		disciplinaService = new DisciplinaServiceImpl();
-	}
+	@Autowired
+	private DisciplinaService disciplinaService;
 	
 	@Override
 	public void cadastrarAluno(AlunoDTO alunoDTO) {
