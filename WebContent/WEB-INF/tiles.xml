@@ -7,6 +7,7 @@
     <definition name="base.definition" template="/resources/tiles/template.jsp">
         <put-attribute name="header" value="/resources/tiles/header.jsp"/>
         <put-attribute name="footer" value="/resources/tiles/footer.jsp"/>
+        <put-attribute name="menu" value="/resources/tiles/menu.jsp"/>
     </definition>
  
     <!--  Pages -->

@@ -5,8 +5,6 @@
 			Alunos
 		</h2>
 		
-		<a href="cadastrar-aluno">Cadastrar Aluno</a> 
-		
 		<c:if test="${not empty listaAlunos}">
 			<table>
 				<thead>
